@@ -141,6 +141,10 @@
 
 ### 3.1 Funcionalidad Offline-First
 
+**P3.0**: Los repartidores deben poder **Unicamente tienen Android**. ¿Es correcto?
+- [ ] Sí
+- [ ] No, hay que incluir App para iOS
+
 **P3.1**: Los repartidores deben poder **trabajar completamente sin conexión a internet**. ¿Es correcto?
 - [ ] Sí, es crítico (zonas con mala cobertura)
 - [ ] Sí, pero solo por períodos cortos
@@ -368,7 +372,7 @@ _______________
 
 **P5.5**: ¿Cada cuánto se liquida a los repartidores?
 - [ ] Diario
-- [ ] Semanal (lunes)
+- [ ] Semanal (domingos)
 - [ ] Quincenal
 - [ ] Mensual
 - **Comentarios**: _______________
@@ -412,7 +416,7 @@ _______________
 ### 6.2 Almacenamiento de Imágenes
 
 **P6.3**: Las fotos (etiquetas, pruebas de entrega) se almacenarán en:
-- [ ] **Azure Blob Storage** (recomendado en el documento)
+- [X] **Azure Blob Storage** (recomendado en el documento)
 - [ ] Cosmos DB (como base64)
 - [ ] Otro: _______________
 
@@ -423,11 +427,6 @@ _______________
 - [ ] Indefinidamente
 
 ### 6.3 OCR con Phi4 Multimodal
-
-**P6.5**: El sistema usa **Phi4 Vision** (modelo multimodal de Microsoft) para OCR. ¿Es aceptable?
-- [ ] Sí
-- [ ] No, preferimos otro servicio (Azure AI Vision, Tesseract, Google Vision, etc.)
-- **Alternativa preferida**: _______________
 
 **P6.6**: Si el OCR extrae datos con **baja confianza** (ej. 60%), ¿qué debe ocurrir?
 - [ ] Se marca para revisión manual

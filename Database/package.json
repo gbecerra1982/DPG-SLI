@@ -1,0 +1,31 @@
+{
+  "name": "logistics-cosmos-db-scripts",
+  "version": "1.0.0",
+  "description": "Scripts de inicialización y gestión de Cosmos DB para sistema de logística multi-nivel",
+  "main": "1-inicializacion-database.js",
+  "scripts": {
+    "init": "node 1-inicializacion-database.js",
+    "seed": "node 2-carga-informacion-aleatoria.js",
+    "setup": "npm run init && npm run seed",
+    "verify": "node 1-inicializacion-database.js verify"
+  },
+  "keywords": [
+    "cosmos-db",
+    "azure",
+    "logistics",
+    "database",
+    "initialization"
+  ],
+  "author": "Logistics System Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@azure/cosmos": "^4.2.0",
+    "@azure/identity": "^4.0.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
